@@ -12,10 +12,36 @@ Este é o meu portfólio pessoal, desenvolvido para apresentar minhas habilidade
 O projeto foi desenvolvido com tecnologias modernas para garantir um design responsivo e uma experiência fluida:  
 
 - 🎨 **HTML5** – Estrutura semântica  
-- 🎨 **CSS3** – Estilização personalizada  
+- 🎨 **CSS3** – Estilização personalizada
+- 🎨 **SCSS (SASS)** – Estilização modular e otimizada 
 - ⚡ **JavaScript** – Interatividade e dinamismo  
 - ✉ **PHP** – Processamento do formulário de contato  
 - 📷 **Font Awesome** – Ícones personalizados  
+
+---
+
+## 🎨 Uso do SCSS (SASS)  
+
+Para otimizar a organização e manutenção do código CSS, este projeto utiliza **SCSS (Syntactically Awesome Stylesheets)**, um pré-processador CSS que permite:  
+
+✅ **Modularização** – Separação do código em arquivos menores e reutilizáveis  
+✅ **Variáveis** – Definição de cores, fontes e espaçamentos globais  
+✅ **Mixins e funções** – Facilitação de estilos reutilizáveis e responsivos  
+✅ **Nesting** – Código mais limpo e estruturado  
+
+### **Compilando SCSS para CSS**  
+
+Se precisar modificar o estilo, edite os arquivos dentro da pasta `/scss` e compile para CSS com:  
+
+sass scss/style.scss css/style.css
+
+Ou, para compilar automaticamente a cada alteração:
+
+sass --watch scss/style.scss:css/style.css
+
+Se ainda não tem o SASS instalado, use o seguinte comando para instalá-lo:
+
+npm install -g sass
 
 ---
 
@@ -23,7 +49,8 @@ O projeto foi desenvolvido com tecnologias modernas para garantir um design resp
 
 portfolio-savior/
 │── assets/             # Imagens, ícones e arquivos de mídia
-│── css/                # Arquivos de estilo (CSS)
+│── css/                # Arquivos CSS compilados
+│── scss/               # Arquivos SCSS (pré-processador CSS)
 │── js/                 # Scripts JavaScript
 │── php/                # Backend (exemplo: envio de e-mails)
 │── index.html          # Página principal do portfólio
@@ -65,7 +92,7 @@ $to = "empresasavior@gmail.com";
 
 Você pode modificar o portfólio conforme sua identidade visual e necessidades.  
 
-🔹 **Cores e fontes** – Editar os arquivos `.css`  
+🔹 **Cores e fontes** – Editar os arquivos `.scss`  e recompilar para `.css` 
 🔹 **Imagens** – Alterar os arquivos `img/`  
 🔹 **Seções e conteúdos** – Modificar diretamente o `index.html`  
 🔹 **Scripts e interatividade** – Ajustar os arquivos dentro da pasta `js/`  
